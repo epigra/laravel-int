@@ -24,7 +24,7 @@
         "illuminate/events": "^5.8|^6.0|^7.0",
         "illuminate/support": "^5.8|^6.0|^7.0",
         "nesbot/carbon": "^2.0",
-        "commerceguys/intl": "^1.0.1",
+        "commerceguys/intl": "^1.0.4",
         "umpirsky/country-list": "^2.0",
         "umpirsky/locale-list": "^1.0",
         "punic/punic": "^3.1"
@@ -49,7 +49,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Propaganistas\\LaravelIntl\\IntlServiceProvider"
+                "Epigra\\LaravelInt\\IntlServiceProvider"
             ]
         }
     }

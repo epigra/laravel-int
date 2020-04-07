@@ -2,9 +2,9 @@
 
 namespace Epigra\LaravelInt;
 
-use Illuminate\Support\Arr;
 use Epigra\LaravelInt\Concerns\WithLocales;
 use Epigra\LaravelInt\Contracts\Intl;
+use Illuminate\Support\Arr;
 
 class Language extends Intl
 {

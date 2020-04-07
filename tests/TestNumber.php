@@ -1,8 +1,10 @@
-<?php namespace Epigra\LaravelInt\Tests;
+<?php
 
-use Orchestra\Testbench\TestCase;
+namespace Epigra\LaravelInt\Tests;
+
 use Epigra\LaravelInt\Facades\Number;
 use Epigra\LaravelInt\IntlServiceProvider;
+use Orchestra\Testbench\TestCase;
 
 class TestNumber extends TestCase
 {
@@ -55,7 +57,7 @@ class TestNumber extends TestCase
     public function testLocaleCanBeTemporarilyChanged()
     {
         $this->app->setLocale('nl');
-        $number = Number::usingLocale('en', function($country) {
+        $number = Number::usingLocale('en', function ($country) {
             return Number::format(1234);
         });
 

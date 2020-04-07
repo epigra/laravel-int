@@ -4,9 +4,9 @@ namespace Epigra\LaravelInt;
 
 use CommerceGuys\Intl\Formatter\NumberFormatter;
 use CommerceGuys\Intl\NumberFormat\NumberFormatRepository;
-use Illuminate\Support\Arr;
 use Epigra\LaravelInt\Concerns\WithLocales;
 use Epigra\LaravelInt\Contracts\Intl;
+use Illuminate\Support\Arr;
 
 class Number extends Intl
 {

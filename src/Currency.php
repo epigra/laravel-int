@@ -2,12 +2,12 @@
 
 namespace Epigra\LaravelInt;
 
-use CommerceGuys\Intl\Formatter\CurrencyFormatter;
 use CommerceGuys\Intl\Currency\CurrencyRepository;
+use CommerceGuys\Intl\Formatter\CurrencyFormatter;
 use CommerceGuys\Intl\NumberFormat\NumberFormatRepository;
-use Illuminate\Support\Arr;
 use Epigra\LaravelInt\Concerns\WithLocales;
 use Epigra\LaravelInt\Contracts\Intl;
+use Illuminate\Support\Arr;
 
 class Currency extends Intl
 {

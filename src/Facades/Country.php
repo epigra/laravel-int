@@ -1,4 +1,6 @@
-<?php namespace Epigra\LaravelInt\Facades;
+<?php
+
+namespace Epigra\LaravelInt\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

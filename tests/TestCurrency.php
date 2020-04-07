@@ -1,8 +1,10 @@
-<?php namespace Epigra\LaravelInt\Tests;
+<?php
 
-use Orchestra\Testbench\TestCase;
+namespace Epigra\LaravelInt\Tests;
+
 use Epigra\LaravelInt\Facades\Currency;
 use Epigra\LaravelInt\IntlServiceProvider;
+use Orchestra\Testbench\TestCase;
 
 class TestCurrency extends TestCase
 {
@@ -58,7 +60,7 @@ class TestCurrency extends TestCase
     public function testLocaleCanBeTemporarilyChanged()
     {
         $this->app->setLocale('nl');
-        $name = Currency::usingLocale('en', function($currency) {
+        $name = Currency::usingLocale('en', function ($currency) {
             return Currency::name('USD');
         });
 

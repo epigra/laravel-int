@@ -1,8 +1,10 @@
-<?php namespace Epigra\LaravelInt\Tests;
+<?php
 
-use Orchestra\Testbench\TestCase;
+namespace Epigra\LaravelInt\Tests;
+
 use Epigra\LaravelInt\Facades\Country;
 use Epigra\LaravelInt\IntlServiceProvider;
+use Orchestra\Testbench\TestCase;
 
 class TestCountry extends TestCase
 {
@@ -24,7 +26,7 @@ class TestCountry extends TestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        $app->setBasePath(__DIR__ . '/..');
+        $app->setBasePath(__DIR__.'/..');
     }
 
     public function testHelper()
@@ -58,7 +60,7 @@ class TestCountry extends TestCase
     public function testLocaleCanBeTemporarilyChanged()
     {
         $this->app->setLocale('nl');
-        $name = Country::usingLocale('en', function($country) {
+        $name = Country::usingLocale('en', function ($country) {
             return Country::name('BE');
         });
 

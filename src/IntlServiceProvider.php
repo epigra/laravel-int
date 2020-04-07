@@ -1,4 +1,6 @@
-<?php namespace Epigra\LaravelInt;
+<?php
+
+namespace Epigra\LaravelInt;
 
 use Illuminate\Foundation\Events\LocaleUpdated;
 use Illuminate\Support\ServiceProvider;

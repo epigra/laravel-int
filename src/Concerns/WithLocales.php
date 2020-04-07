@@ -7,14 +7,14 @@ trait WithLocales
     /**
      * The current locale.
      *
-     * @var string $locale
+     * @var string
      */
     protected $locale;
 
     /**
      * The current locale.
      *
-     * @var string $locale
+     * @var string
      */
     protected $fallbackLocale;
 

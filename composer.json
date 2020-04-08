@@ -2,11 +2,11 @@
     "name": "epigra/laravel-int",
     "description": "Easy to use internationalization functions for Laravel",
     "keywords": [
-        "laravel",
+        "i18n",
         "internationalization",
         "intl",
-        "i18n",
-        "l10n"
+        "l10n",
+        "laravel"
     ],
     "license": "MIT",
     "authors": [
@@ -21,8 +21,8 @@
     ],
     "require": {
         "php": ">=7.1.3",
-        "illuminate/events": "^5.8|^6.0|^7.0",
-        "illuminate/support": "^5.8|^6.0|^7.0",
+        "illuminate/events": "^5.8 || ^6.0 || ^7.0",
+        "illuminate/support": "^5.8 || ^6.0 || ^7.0",
         "nesbot/carbon": "^2.0",
         "commerceguys/intl": "^1.0.4",
         "umpirsky/country-list": "^2.0",

@@ -20,6 +20,7 @@ class IntlServiceProvider extends ServiceProvider
         $this->registerLanguage();
         $this->registerNumber();
         $this->registerDate();
+        $this->registerConfig();
     }
 
     /**
@@ -34,6 +35,20 @@ class IntlServiceProvider extends ServiceProvider
         });
 
         $this->setLocale();
+    }
+
+    /**
+     * Register config.
+     */
+    protected function registerConfig()
+    {
+        $this->publishes([
+            __DIR__.'/config/config.php' => config_path('laravel-int.php'),
+        ], 'config');
+        $this->mergeConfigFrom(
+            __DIR__.'/config/config.php',
+            'laravel-int'
+        );
     }
 
     /**

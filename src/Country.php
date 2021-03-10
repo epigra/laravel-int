@@ -62,8 +62,10 @@ class Country extends Intl
     {
         if (! isset($this->data[$locale])) {
             $path = base_path('vendor/umpirsky/country-list/data/'.$locale.'/country.php');
+            $customCountries = config("laravel-int.countries.$locale", []);
 
             $this->data[$locale] = is_file($path) ? require $path : [];
+            $this->data[$locale] = array_merge($this->data[$locale], $customCountries);
         }
 
         return $this->data[$locale];

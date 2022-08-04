@@ -1,6 +1,6 @@
 # Laravel Intl
 
-Easy to use internationalization functions for Laravel 7 and Lumen based on various libraries for easy retrieval of localized values and formatting of numeric values into their localized patterns.
+Easy to use internationalization functions for Laravel 8 and 9 and Lumen based on various libraries for easy retrieval of localized values and formatting of numeric values into their localized patterns.
 
 ### Overview
 

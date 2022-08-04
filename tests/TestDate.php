@@ -91,7 +91,7 @@ class TestDate extends TestCase
         $this->app->setLocale('nl');
         $date = Date::create(2018, 1, 1, 1, 2, 3)->toFullTimeString();
 
-        $this->assertEquals('01:02:03 Gecoördineerde wereldtijd', $date);
+        $this->assertEquals('01:02:03 gecoördineerde wereldtijd', $date);
     }
 
     public function testToShortDatetimeString()
@@ -123,6 +123,6 @@ class TestDate extends TestCase
         $this->app->setLocale('nl');
         $date = Date::create(2018, 1, 31, 1, 2, 3)->toFullDatetimeString();
 
-        $this->assertEquals('woensdag 31 januari 2018 om 01:02:03 Gecoördineerde wereldtijd', $date);
+        $this->assertEquals('woensdag 31 januari 2018 om 01:02:03 gecoördineerde wereldtijd', $date);
     }
 }

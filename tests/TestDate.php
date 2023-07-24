@@ -43,7 +43,7 @@ class TestDate extends TestCase
         $this->app->setLocale('nl');
         $date = Date::create(2018, 1, 31)->toMediumDateString();
 
-        $this->assertEquals('31 jan. 2018', $date);
+        $this->assertEquals('31 jan 2018', $date);
     }
 
     public function testToLongDateString()
@@ -107,7 +107,7 @@ class TestDate extends TestCase
         $this->app->setLocale('nl');
         $date = Date::create(2018, 1, 31, 1, 2, 3)->toMediumDatetimeString();
 
-        $this->assertEquals('31 jan. 2018 01:02:03', $date);
+        $this->assertEquals('31 jan 2018 01:02:03', $date);
     }
 
     public function testToLongDatetimeString()
@@ -115,7 +115,7 @@ class TestDate extends TestCase
         $this->app->setLocale('nl');
         $date = Date::create(2018, 1, 31, 1, 2, 3)->toLongDatetimeString();
 
-        $this->assertEquals('31 januari 2018 om 01:02:03 UTC', $date);
+        $this->assertEquals('31 januari 2018 01:02:03 UTC', $date);
     }
 
     public function testToFullDatetimeString()
@@ -123,6 +123,6 @@ class TestDate extends TestCase
         $this->app->setLocale('nl');
         $date = Date::create(2018, 1, 31, 1, 2, 3)->toFullDatetimeString();
 
-        $this->assertEquals('woensdag 31 januari 2018 om 01:02:03 gecoördineerde wereldtijd', $date);
+        $this->assertEquals('woensdag 31 januari 2018 01:02:03 gecoördineerde wereldtijd', $date);
     }
 }

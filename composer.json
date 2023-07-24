@@ -24,7 +24,7 @@
         "illuminate/events": "^8.0|^9.0|^10.0",
         "illuminate/support": "^8.0|^9.0|^10.0",
         "nesbot/carbon": "^2.0",
-        "commerceguys/intl": "^1.0.4",
+        "commerceguys/intl": "^2.0.4",
         "umpirsky/country-list": "^2.0",
         "umpirsky/locale-list": "^1.0",
         "punic/punic": "^3.1"
